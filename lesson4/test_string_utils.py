@@ -42,7 +42,7 @@ def test_contains_positive():
 def test_contains_negative():
     assert utils.contains("SkyPro", "X") is False  # Символ не найден
     assert utils.contains("", "S") is False  # Пустая строка
-    with pytest.raises(TypeError):  # Проверка на None
+    with pytest.raises(AttributeError):  # Проверка на None
         utils.contains(None, "S")
 
 # Тесты для метода delete_symbol
