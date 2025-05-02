@@ -8,7 +8,7 @@ try:
 
     time.sleep(5)
 
-    close_button = driver.find_element(By.CSS_SELECTOR, "div.modal-footer > p > a")
+    close_button = driver.find_element(By.CSS_SELECTOR, "div.modal-footer > p")
     close_button.click()
 
     time.sleep(5)

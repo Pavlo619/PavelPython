@@ -11,7 +11,7 @@ try:
 
     input_field.send_keys("1000")
 
-    time.sleep(4)
+    time.sleep(2)
 
     input_field.clear()
 

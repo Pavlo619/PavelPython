@@ -11,6 +11,6 @@ driver.get("http://uitestingplayground.com/classattr")
 blue_button = driver.find_element(By.CSS_SELECTOR, '.btn-primary')
 blue_button.click()
 
-sleep(30)
+sleep(10)
 
 driver.quit()
