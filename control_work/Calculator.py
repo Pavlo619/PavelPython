@@ -40,4 +40,4 @@ def test_slow_calculator(driver):
 
         assert result_text == "15", f"Ожидался результат 15, но получен: {result_text}"
     except Exception as e:
-        print(f"Ошибка: {e}")
+        print(f"Ошибка: результат 15, но получен{e}")
