@@ -4,7 +4,7 @@ import requests
 base_url="https://ru.yougile.com/api-v2/projects"
 
 
-headers = {'authorization': 'Bearer ofJjYruw4VTH6Y8hyeFAzbT6TrzgWNnanlS61SR4fgFT17yGKBRBTin9Tn71iEJr'}
+headers = {'authorization': 'Bearer '}
 
 
 def test_get_project():
