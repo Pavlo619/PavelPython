@@ -3,11 +3,13 @@ import pytest
 from selenium import webdriver
 from Pokupkapage import ShoppingCartPage
 
+
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
     yield driver
     driver.quit()
+
 
 @allure.severity(allure.severity.NORMAL)
 @allure.description("Проверка формы покупки, для авторизованного пользователя")

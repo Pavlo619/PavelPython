@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class ShoppingCartPage:
     def __init__(self, driver):
         self.driver = driver
-        self.waiter = WebDriverWait(driver,40)
+        self.waiter = WebDriverWait(driver, 40)
 
     @allure.step("Открытие сайта")
     def open(self):

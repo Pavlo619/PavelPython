@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from Calcelatorpage import CalculatorPage
 
+
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
