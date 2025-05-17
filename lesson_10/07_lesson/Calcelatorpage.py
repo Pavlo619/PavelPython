@@ -21,7 +21,7 @@ class CalculatorPage:
         delay_field.clear()
         delay_field.send_keys(delay)
 
-    @allure.step("Проверка работы кнопки")
+    @allure.step("Проверка работы кнопок")
     def click_button(self, button_text):
         button = WebDriverWait(self.driver, 20).until(
             EC.element_to_be_clickable((By.XPATH, f"//span[text()='{button_text}']"))

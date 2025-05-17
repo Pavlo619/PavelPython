@@ -15,8 +15,8 @@ def driver():
 
 
 @allure.severity(allure.severity.NORMAL)
-@allure.description("Тестирование калькулятора, проверка работы приложения")
-@allure.title("Тестирование сложения")
+@allure.description("Тестирование калькулятора, проверка корректной работы приложения")
+@allure.title("Тестирование калькулятора")
 def test_slow_calculator(driver):
     page = CalculatorPage(driver)
     page.open()
