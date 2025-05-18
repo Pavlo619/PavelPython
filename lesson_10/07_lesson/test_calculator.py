@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Calcelatorpage import CalculatorPage
+from calculatorpage import CalculatorPage
 
 
 @pytest.fixture
@@ -14,7 +14,7 @@ def driver():
     driver.quit()
 
 
-@allure.severity(allure.severity.NORMAL)
+@allure.severity("normal")
 @allure.description("Тестирование калькулятора, проверка корректной работы приложения")
 @allure.title("Тестирование калькулятора")
 def test_slow_calculator(driver):

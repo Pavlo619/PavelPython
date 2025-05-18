@@ -1,7 +1,7 @@
 import allure
 import pytest
 from selenium import webdriver
-from Pokupkapage import ShoppingCartPage
+from pokupkapage import ShoppingCartPage
 
 
 @pytest.fixture
@@ -11,7 +11,7 @@ def driver():
     driver.quit()
 
 
-@allure.severity(allure.severity.NORMAL)
+@allure.severity("normal")
 @allure.description("Проверка формы покупки, для авторизованного пользователя")
 @allure.title("Тестирование формы покупки")
 def test_shopping_cart(driver):
